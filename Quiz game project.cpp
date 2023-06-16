@@ -70,7 +70,7 @@ void login()
     else
     {
         printf("Incorrect UserID or Password\nPlease enter correct UserID or password\n\n");
-
+        exit(0);
     }
 
 }
