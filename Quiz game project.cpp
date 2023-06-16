@@ -150,7 +150,7 @@ int main()
 
 
             printf("Wrong Answer\n");
-            point01==0 ;
+            point01=0 ;
 
             printf("Oops! You have scored %d point.\n",point01);
 
@@ -159,11 +159,11 @@ int main()
 
 
             printf("The correct answer is: 4) scanf\n");
- printf("====================================================================\n");
+            printf("====================================================================\n");
         }
         printf("\n");
 
-   printf("02. Which of the following is an example of a web browser?\n\n");
+        printf("02. Which of the following is an example of a web browser?\n\n");
         printf("1) Adobe Photoshop\n");
         printf("2) Microsoft Excel\n");
         printf("3) Google\n");
@@ -182,7 +182,7 @@ int main()
         else
         {
             printf("Wrong Answer\n");
-            point02==0;
+            point02=0;
             printf("Oops! You have scored %d point.\n",point02);
 
 
@@ -190,13 +190,13 @@ int main()
 
 
             printf("The correct answer is: 3) Google\n");
-           printf("====================================================================\n");
+            printf("====================================================================\n");
         }
 
 
-printf("\n");
+        printf("\n");
 
-  printf("03. What is the correct way to write a single-line comment in C?\n\n");
+        printf("03. What is the correct way to write a single-line comment in C?\n\n");
         printf("1) /*comment*/\n");
         printf("2) //comment\n");
         printf("3) <!--comment-->\n");
@@ -215,15 +215,15 @@ printf("\n");
         else
         {
             printf("Wrong Answer\n");
-            point03==0;
+            point03=0;
             printf("Oops! You have scored %d point.\n",point03);
             printf("The correct answer is: 2) //comment\n");
-           printf("====================================================================\n");
+            printf("====================================================================\n");
         }
 
-printf("\n");
+        printf("\n");
 
-  printf("04. What is the function of a firewall in network security?\n\n");
+        printf("04. What is the function of a firewall in network security?\n\n");
         printf("1) To protect against viruses\n");
         printf("2) To block unwanted websites\n");
         printf("3) To prevent unauthorized access\n");
@@ -242,18 +242,18 @@ printf("\n");
         else
         {
             printf("Wrong Answer\n");
-            point04==0;
+            point04=0;
             printf("Oops! You have scored %d point.\n",point04);
             printf("The correct answer is: 3) To prevent unauthorized access\n");
             printf("====================================================================\n");
         }
 
 
-    printf("\n");
+        printf("\n");
 
-  printf("05. What is the output of the following code snippet?\n\n");
-  printf("                #include<stdio.h>\n                int main() {\n                int x=10;\n                x++;\n          ");
-  printf("%s","      printf(\"%d\",x);\n                return 0;\n                }\n\n");
+        printf("05. What is the output of the following code snippet?\n\n");
+        printf("                #include<stdio.h>\n                int main() {\n                int x=10;\n                x++;\n          ");
+        printf("%s","      printf(\"%d\",x);\n                return 0;\n                }\n\n");
         printf("1) 10\n");
         printf("2) 11\n");
         printf("3) 12\n");
@@ -272,7 +272,7 @@ printf("\n");
         else
         {
             printf("Wrong Answer\n");
-            point05==0;
+            point05=0;
             printf("Oops! You have scored %d point.\n",point05);
 
 
@@ -280,10 +280,10 @@ printf("\n");
 
 
             printf("The correct answer is: 2) 11\n");
-           printf("====================================================================\n");
+            printf("====================================================================\n");
         }
-printf("\n");
-printf("06. What does the term 'URL' stand for??\n\n");
+        printf("\n");
+        printf("06. What does the term 'URL' stand for??\n\n");
         printf("1) Universal Resource Locator\n");
         printf("2) Uniform Resource Locator\n");
         printf("3) Universal Reference Locator\n");
@@ -302,17 +302,17 @@ printf("06. What does the term 'URL' stand for??\n\n");
         else
         {
             printf("Wrong Answer\n");
-            point06==0;
+            point06=0;
             printf("Oops! You have scored %d point.\n",point06);
             printf("The correct answer is: 2) Uniform Resource Locator\n");
             printf("====================================================================\n");
         }
 
 
-    printf("\n");
+        printf("\n");
 
 
-printf("07. What is the correct way to end a C statement?\n\n");
+        printf("07. What is the correct way to end a C statement?\n\n");
         printf("1) ;\n");
         printf("2) :\n");
         printf("3) .\n");
@@ -331,40 +331,40 @@ printf("07. What is the correct way to end a C statement?\n\n");
         else
         {
             printf("Wrong Answer\n");
-            point07==0;
+            point07=0;
             printf("Oops! You have scored %d point.\n",point07);
             printf("The correct answer is: 1) ;\n");
             printf("====================================================================\n");
         }
         printf("\n");
 
-printf("08. What does CPU stand for?\n\n");
+        printf("08. What does CPU stand for?\n\n");
         printf("1) Central Processing Unit\n");
         printf("2) Computer Processing Unit\n");
         printf("3) Control Processing Unit\n");
         printf("4) Central Power Unit\n");
         printf("Enter Your Answer : ");
 
-        scanf("%d",&ans2);
+        scanf("%d",&ans8);
         printf("\n");
-        if(ans2==1)
+        if(ans8==1)
         {
             printf("Correct Answer\n");
-            point2=5;
-            printf("Congratulations! You have scored %d points.\n",point2);
+            point8=5;
+            printf("Congratulations! You have scored %d points.\n",point8);
 
         }
         else
         {
             printf("Wrong Answer\n");
-            point02==0;
-            printf("Oops! You have scored %d point.\n",point02);
+            point08=0;
+            printf("Oops! You have scored %d point.\n",point08);
             printf("The correct answer is: 1) Central Processing Unit\n");
 
         }
         printf("====================================================================\n");
-printf("\n");
-printf("09. What is the index of the last element in an array with 10 elements?\n\n");
+        printf("\n");
+        printf("09. What is the index of the last element in an array with 10 elements?\n\n");
         printf("1) 10\n");
         printf("2) 9\n");
         printf("3) 0\n");
@@ -383,13 +383,13 @@ printf("09. What is the index of the last element in an array with 10 elements?\
         else
         {
             printf("Wrong Answer\n");
-            point09==0;
+            point09=0;
             printf("Oops! You have scored %d point.\n",point09);
             printf("The correct answer is: 2) 9\n");
             printf("====================================================================\n");
         }
-printf("\n");
-printf("10. What is the correct way to include the standered input/output library in C?\n\n");
+        printf("\n");
+        printf("10. What is the correct way to include the standered input/output library in C?\n\n");
         printf("1) #include<stdio.h>\n");
         printf("2) #include<input.h>\n");
         printf("3) #include<iostream>\n");
@@ -408,11 +408,11 @@ printf("10. What is the correct way to include the standered input/output librar
         else
         {
             printf("Wrong Answer\n");
-            point10==0;
-            printf("Oops! You have scored %d point.\n",point10);
+            point010=0;
+            printf("Oops! You have scored %d point.\n",point010);
             printf("The correct answer is: 1) #include<stdio.h>\n");
             printf("====================================================================\n");
         }
 
-}
+    }
 }
