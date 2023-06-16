@@ -135,7 +135,7 @@ int main()
         printf("2) read\n");
         printf("3) print\n");
         printf("4) scanf\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans1);
         printf("\n");
@@ -172,7 +172,7 @@ int main()
         printf("2) Microsoft Excel\n");
         printf("3) Google\n");
         printf("4) Microsoft Word\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans2);
         printf("\n");
@@ -205,7 +205,7 @@ int main()
         printf("2) //comment\n");
         printf("3) <!--comment-->\n");
         printf("4) **comment**\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans3);
         printf("\n");
@@ -232,7 +232,7 @@ int main()
         printf("2) To block unwanted websites\n");
         printf("3) To prevent unauthorized access\n");
         printf("4) To improve internet speed\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans4);
         printf("\n");
@@ -262,7 +262,7 @@ int main()
         printf("2) 11\n");
         printf("3) 12\n");
         printf("4) Error\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans5);
         printf("\n");
@@ -292,7 +292,7 @@ int main()
         printf("2) Uniform Resource Locator\n");
         printf("3) Universal Reference Locator\n");
         printf("4) Uniform Reference Locator\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans6);
         printf("\n");
@@ -321,7 +321,7 @@ int main()
         printf("2) :\n");
         printf("3) .\n");
         printf("4) ,\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans7);
         printf("\n");
@@ -347,7 +347,7 @@ int main()
         printf("2) Computer Processing Unit\n");
         printf("3) Control Processing Unit\n");
         printf("4) Central Power Unit\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans8);
         printf("\n");
@@ -373,7 +373,7 @@ int main()
         printf("2) 9\n");
         printf("3) 0\n");
         printf("4) 1\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans9);
         printf("\n");
@@ -398,7 +398,7 @@ int main()
         printf("2) #include<input.h>\n");
         printf("3) #include<iostream>\n");
         printf("4) #include<output.h>\n");
-        printf("Enter Your Answer : ");
+        printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans10);
         printf("\n");
@@ -418,7 +418,7 @@ int main()
             printf("====================================================================\n");
         }
         system("CLS");
-        printf("Your total result is processing...\nPlease wait...\n");
+        printf("Your result is processing...\nPlease wait...\n");
 
         sleep(5);
         int total;
@@ -442,4 +442,3 @@ int main()
 
 
 
-   
