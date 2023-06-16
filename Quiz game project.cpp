@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include <string.h>
 #include<conio.h>
+#include<unistd.h>
 struct login
 {
     char fname[100];
@@ -10,6 +11,8 @@ struct login
     char password[20];
 
 };
+
+
 
 
 void registe()
@@ -79,7 +82,7 @@ int main()
 
 {
 
-
+    int sum=0;
 
     int choice;
     printf("------Welcome to the Quiz Game------\n\n");
@@ -101,7 +104,7 @@ int main()
 
     int i;
     int r,ans1,ans2,ans3,ans4,ans5,ans6,ans7,ans8,ans9,ans10;
-    int point1,point2,point3,point4,point5,point6,point7,point8,point9,point10;
+    int point1=0,point2=0,point3=0,point4=0,point5=0,point6=0,point7=0,point8=0,point9=0,point10=0;
     int point01,point02,point03,point04,point05,point06,point07,point08,point09,point010;
     int total1,total2,total3;
 
@@ -140,6 +143,7 @@ int main()
         {
             printf("Correct Answer\n");
             point1=5;
+
             printf("Congratulations! You have scored %d points.\n",point1);
             printf("====================================================================\n");
         }
@@ -413,6 +417,29 @@ int main()
             printf("The correct answer is: 1) #include<stdio.h>\n");
             printf("====================================================================\n");
         }
+        system("CLS");
+        printf("Your total result is processing...\nPlease wait...\n");
 
+        sleep(5);
+        int total;
+        system("CLS");
+        total=point1+point2+point3+point4+point5+point6+point7+point8+point9+point10;
+        printf("Your Total Score is = %d\n\n",total);
+        if(total<=10)
+        {
+            printf("Don't worry. Failure is a part of the process. You just learn to pick yourself back up.\nTry your best next time.\n");
+        }
+        else if(total>10&&total<=40)
+        {
+            printf("Great!! Nice Try.\n");
+        }
+        else if(total>40)
+        {
+            printf("Congratulations!! Your hard work and perseverance have paid off.\n");
+        }
     }
 }
+
+
+
+   
