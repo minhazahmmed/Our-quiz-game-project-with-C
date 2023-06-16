@@ -3,6 +3,7 @@
 #include <string.h>
 #include<conio.h>
 #include<unistd.h>
+
 struct login
 {
     char fname[100];
@@ -11,9 +12,6 @@ struct login
     char password[20];
 
 };
-
-
-
 
 void registe()
 {
@@ -60,13 +58,9 @@ void login()
         }
     }
 
-
-
     fclose(log);
-
     if (found)
     {
-
         printf("Login Successful\n\n");
         printf("------Welcome to the Quiz Game------\n\n");
     }
@@ -75,14 +69,11 @@ void login()
         printf("Incorrect UserID or Password\nPlease enter correct UserID or password\n\n");
         exit(0);
     }
-
 }
 
+
 int main()
-
 {
-
- 
 
     int choice;
     printf("------Welcome to the Quiz Game------\n\n");
@@ -98,8 +89,6 @@ int main()
         system("CLS");
         login();
     }
-
-
 
 
     int i;
@@ -128,6 +117,8 @@ int main()
     {
         printf("Invalid!!!\n\n");
     }
+
+
     if(i==1)
     {
         printf("01. Which operator is used for taking input from the user in C?\n\n");
@@ -149,19 +140,9 @@ int main()
         }
         else
         {
-
-
-
-
             printf("Wrong Answer\n");
             point01=0 ;
-
             printf("Oops! You have scored %d point.\n",point01);
-
-
-
-
-
             printf("The correct answer is: 4) scanf\n");
             printf("====================================================================\n");
         }
@@ -188,16 +169,9 @@ int main()
             printf("Wrong Answer\n");
             point02=0;
             printf("Oops! You have scored %d point.\n",point02);
-
-
-
-
-
             printf("The correct answer is: 3) Google\n");
             printf("====================================================================\n");
         }
-
-
         printf("\n");
 
         printf("03. What is the correct way to write a single-line comment in C?\n\n");
@@ -252,7 +226,6 @@ int main()
             printf("====================================================================\n");
         }
 
-
         printf("\n");
 
         printf("05. What is the output of the following code snippet?\n\n");
@@ -278,15 +251,12 @@ int main()
             printf("Wrong Answer\n");
             point05=0;
             printf("Oops! You have scored %d point.\n",point05);
-
-
-
-
-
             printf("The correct answer is: 2) 11\n");
             printf("====================================================================\n");
         }
+
         printf("\n");
+
         printf("06. What does the term 'URL' stand for??\n\n");
         printf("1) Universal Resource Locator\n");
         printf("2) Uniform Resource Locator\n");
@@ -311,7 +281,6 @@ int main()
             printf("The correct answer is: 2) Uniform Resource Locator\n");
             printf("====================================================================\n");
         }
-
 
         printf("\n");
 
@@ -356,7 +325,6 @@ int main()
             printf("Correct Answer\n");
             point8=5;
             printf("Congratulations! You have scored %d points.\n",point8);
-
         }
         else
         {
@@ -367,7 +335,9 @@ int main()
 
         }
         printf("====================================================================\n");
+
         printf("\n");
+
         printf("09. What is the index of the last element in an array with 10 elements?\n\n");
         printf("1) 10\n");
         printf("2) 9\n");
