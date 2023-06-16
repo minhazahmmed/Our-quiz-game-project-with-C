@@ -82,7 +82,7 @@ int main()
 
 {
 
-    int sum=0;
+ 
 
     int choice;
     printf("------Welcome to the Quiz Game------\n\n");
