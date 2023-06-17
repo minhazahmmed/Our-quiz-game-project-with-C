@@ -61,7 +61,7 @@ void login()
     fclose(log);
     if (found)
     {
-        printf("Login Successful\n\n");
+        printf("\nLogin Successful\n\n");
         printf("------Welcome to the Quiz Game------\n\n");
     }
     else
@@ -97,11 +97,16 @@ int main()
     int point01,point02,point03,point04,point05,point06,point07,point08,point09,point010;
     int total1,total2,total3;
 
+
     printf("**************************************|\n");
     printf("=> Game Developers Information:       |\n Name: Minhaz Ahmmed      ID: C231011 |\n Name: Salah Uddin Mahi   ID: C231003 |\n Name: Ayman Abrar        ID: C231001 |\n Name: Md. Nazim Uddin    ID: C231020 |\n");
-    printf("**************************************|\n");
-    printf(">> Press 1 to start the game\n");
-    printf(">> Press 0 to quit the game\n");
+    printf("**************************************|\n\n");
+
+    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+    printf(">> Press 1 to start the game |\n");
+    printf(">> Press 0 to quit the game  |\n");
+    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+printf("Enter your choice : ");
     scanf("%d",&i);
     if(i==1)
     {
@@ -387,9 +392,10 @@ int main()
             printf("The correct answer is: 1) #include<stdio.h>\n");
             printf("====================================================================\n");
         }
+
+
         system("CLS");
         printf("Your result is processing...\nPlease wait...\n");
-
         sleep(5);
         int total;
         system("CLS");
