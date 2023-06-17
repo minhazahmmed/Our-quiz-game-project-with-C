@@ -106,7 +106,7 @@ int main()
     printf(">> Press 1 to start the game |\n");
     printf(">> Press 0 to quit the game  |\n");
     printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
-printf("Enter your choice : ");
+    printf("Enter your choice : ");
     scanf("%d",&i);
     if(i==1)
     {
