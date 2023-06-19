@@ -27,7 +27,7 @@ void registe()
     scanf("%s", l.username);
     printf("Enter password: ");
     scanf("%s", l.password);
-    fwrite(&l, sizeof(struct login), 1, log); // Write a single struct to the file
+    fwrite(&l, sizeof(struct login), 1, log);
     fclose(log);
     printf("\n\nYour user name is UserID\n");
     printf("Now login with UserID and Password\n");
@@ -59,7 +59,7 @@ void login()
     }
 
     fclose(log);
-    if (found)
+    if (found==1)
     {
         printf("\nLogin Successful\n\n");
         printf("------Welcome to the Quiz Game------\n\n");
@@ -95,8 +95,8 @@ int main()
     int r,ans1,ans2,ans3,ans4,ans5,ans6,ans7,ans8,ans9,ans10;
     int point1=0,point2=0,point3=0,point4=0,point5=0,point6=0,point7=0,point8=0,point9=0,point10=0;
     int point01,point02,point03,point04,point05,point06,point07,point08,point09,point010;
-    int total1,total2,total3;
 
+ system("Color 3E");
 
     printf("**************************************|\n");
     printf("=> Game Developers Information:       |\n Name: Minhaz Ahmmed      ID: C231011 |\n Name: Salah Uddin Mahi   ID: C231003 |\n Name: Ayman Abrar        ID: C231001 |\n Name: Md. Nazim Uddin    ID: C231020 |\n");
@@ -126,6 +126,7 @@ int main()
 
     if(i==1)
     {
+
         printf("01. Which operator is used for taking input from the user in C?\n\n");
         printf("1) input\n");
         printf("2) read\n");
@@ -415,6 +416,5 @@ int main()
         }
     }
 }
-
 
 
