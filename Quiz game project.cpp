@@ -31,29 +31,29 @@ void registe()
     printf("|----------------------------------------------------------------------------------------------------------------------|\n");
     printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
     printf("|----------------------------------------------------------------------------------------------------------------------|\n");
-    gotoxy(44,7);
+    gotoxy(48,8);
     printf("Registration Information\n");
-    gotoxy(42,8);
+    gotoxy(47,9);
     printf("---------------------------\n");
-    gotoxy(44,10);
+    gotoxy(48,11);
     printf("Enter first name: ");
     scanf("%s", l.fname);
-    gotoxy(44,11);
+    gotoxy(48,12);
     printf("Enter last name: ");
     scanf("%s", l.lname);
-    gotoxy(44,12);
+    gotoxy(48,13);
     printf("Enter username: ");
     scanf("%s", l.username);
-    gotoxy(44,13);
+    gotoxy(48,14);
     printf("Enter password: ");
     scanf("%s", l.password);
     fwrite(&l, sizeof(struct login), 1, log);
     fclose(log);
-    gotoxy(42,16);
+    gotoxy(46,17);
     printf("Your user name is UserID\n");
-    gotoxy(38,17);
+    gotoxy(42,18);
     printf("Now login with UserID and Password\n");
-    gotoxy(39,21);
+    gotoxy(45,21);
     printf("Press any key to continue...");
     getch();
     system("CLS");
@@ -134,12 +134,12 @@ void login()
        printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
         printf("|----------------------------------------------------------------------------------------------------------------------|\n");
 
-gotoxy(42,11);
+gotoxy(45,11);
         printf("Incorrect UserID or Password\n");
 
         printf("\n");
-        gotoxy(37,13);
-        printf("Please enter correct UserID or password\n\n");
+        gotoxy(39,13);
+        printf("Please enter correct UserID or password\n\n\n");
         exit(0);
     }
 }
