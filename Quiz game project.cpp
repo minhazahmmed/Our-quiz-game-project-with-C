@@ -567,21 +567,28 @@ printf("\n");
         if(total<=10)
         {
             printf("\n");
-            printf("                Don't worry. Failure is a part of the process. You just learn to pick yourself back up.\n\n                                          Try your best next time.\n");
+            printf("               |.......................................................................................|\n");
+            printf("               |Don't worry. Failure is a part of the process. You just learn to pick yourself back up.|\n");
+            printf("               |                              Try your best next time.                                 |\n");
+            printf("               |.......................................................................................|\n");
             printf("\n\n");
         }
         else if(total>10&&total<=40)
         {
               printf("\n");
-            printf("                                                Great!! Nice Try.\n");
+            printf("                  |..............................................................................|\n");
+            printf("                  |                             Great!! Nice Try.                                |\n");
+            printf("                  |..............................................................................|\n");
             printf("\n\n");
         }
         else if(total>40)
         {
               printf("\n");
-
-        printf("                              Congratulations!! Your hard work and perseverance have paid off.\n");
+              printf("                  |.......................................................................................|\n");
+              printf("                  |            Congratulations!! Your hard work and perseverance have paid off.           |\n");
+              printf("                  |.......................................................................................|\n");
         printf("\n\n");
+
     }
     }
 }
