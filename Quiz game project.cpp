@@ -543,24 +543,44 @@ printf("\n");
 
 
         system("CLS");
-        printf("Your result is processing...\nPlease wait...\n");
+        printf("|----------------------------------------------------------------------------------------------------------------------|");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|");
+    printf("|----------------------------------------------------------------------------------------------------------------------|");
+
+     printf("\n\n\n");
+        printf("                                           Your result is processing...\n                                                 Please wait...\n");
         sleep(5);
         int total;
         system("CLS");
+
+        printf("|----------------------------------------------------------------------------------------------------------------------|");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|");
+    printf("|----------------------------------------------------------------------------------------------------------------------|");
+
+
         total=point1+point2+point3+point4+point5+point6+point7+point8+point9+point10;
-        printf("Your Total Score is = %d\n\n",total);
+        printf("\n\n\n");
+        
+        printf("                                            Your Total Score is = %d\n\n",total);
         if(total<=10)
         {
-            printf("Don't worry. Failure is a part of the process. You just learn to pick yourself back up.\nTry your best next time.\n");
+            printf("\n");
+            printf("                Don't worry. Failure is a part of the process. You just learn to pick yourself back up.\n\n                                          Try your best next time.\n");
+            printf("\n\n");
         }
         else if(total>10&&total<=40)
         {
-            printf("Great!! Nice Try.\n");
+              printf("\n");
+            printf("                                                Great!! Nice Try.\n");
+            printf("\n\n");
         }
         else if(total>40)
         {
-            printf("Congratulations!! Your hard work and perseverance have paid off.\n");
-        }
+              printf("\n");
+
+        printf("                              Congratulations!! Your hard work and perseverance have paid off.\n");
+        printf("\n\n");
+    }
     }
 }
 
