@@ -184,49 +184,49 @@ int main()
     gotoxy(38,5);
     printf("|**************************************|\n");
     gotoxy(38,6);
-    printf("| => Game Developers Information:      |\n");
+    printf("| => Game Developer's Information:     |\n");
     gotoxy(38,7);
-    printf("| Name: Minhaz Ahmmed                  |");
+    printf("|    Name: Minhaz Ahmmed               |");
     gotoxy(38,8);
-    printf("| B.Sc in CSE                          |\n                                      | from IIUC                            |\n                                      | ID: C231011                          |");
-    //printf("| Name: Salah Uddin Mahi   ID: C231003 |");
-    gotoxy(38,9);
-    //printf("| Name: Ayman Abrar        ID: C231001 |");
-    gotoxy(38,10);
+    printf("|    B.Sc in CSE                       |\n                                      |    from IIUC                         |\n                                      |    ID: C231011                       |\n                                      |--------------------------------------|            \n                                      |--------------------------------------|\n                                      | => Co-Developers:                    |\n                                      |    Salah Uddin Mahi, Ayman Abrar,    |\n                                      |          Md. Nazim Uddin             |\n");
+    //printf("| => Co-Developer:                   |\n          |Name: Salah Uddin Mahi          |\n            | Name: Ayman Abrar               |\n                 | Name: Md. Nazim Uddin             |\n");
+    //gotoxy(38,9);
+    //printf("| Name: Ayman Abrar         |");
+    //gotoxy(38,10);
     //printf("| Name: Md. Nazim Uddin    ID: C231020 |");
-    gotoxy(38,11);
-
-    printf("|**************************************|\n\n");
-    printf("\n\n");
-    gotoxy(42,14);
+    //gotoxy(38,11);
+//printf("\n");
+    printf("                                      |--------------------------------------|\n\n\n");
+    printf("\n\n\n\n");
+    gotoxy(42,18);
     printf("Press any key to continue...");
     getch();
 
-    gotoxy(40,16);
+    gotoxy(40,20);
     printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
-    gotoxy(40,17);
-    printf("|>> Press 1 to start the game |\n");
-    gotoxy(40,18);
-    printf("|>> Press 0 to quit the game  |\n");
-    gotoxy(40,19);
-    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
     gotoxy(40,21);
+    printf("|>> Press 1 to start the game |\n");
+    gotoxy(40,22);
+    printf("|>> Press 0 to quit the game  |\n");
+    gotoxy(40,23);
+    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+    gotoxy(40,24);
     printf("Enter your choice : ");
     scanf("%d",&i);
     if(i==1)
     {
-        gotoxy(40,23);
+        gotoxy(40,26);
         printf("The game has started...\n\n");
         printf("========================================================================================================================\n");
     }
     else if(i==0)
     {
-        gotoxy(49,23);
+        gotoxy(49,26);
         printf("The game has ended...\n\n");
     }
     else
     {
-        gotoxy(55,23);
+        gotoxy(55,26);
         printf("Invalid!!!\n\n");
     }
 
