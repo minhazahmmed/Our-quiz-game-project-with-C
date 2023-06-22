@@ -57,6 +57,9 @@ void registe()
     printf("Press any key to continue...");
     getch();
     system("CLS");
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
     login();
 }
 
@@ -129,7 +132,7 @@ void login()
 
 
         system("cls");
-        //gotoxy(47,10);
+
         printf("|----------------------------------------------------------------------------------------------------------------------|\n");
         printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
         printf("|----------------------------------------------------------------------------------------------------------------------|\n");
@@ -181,21 +184,22 @@ int main()
     gotoxy(38,5);
     printf("|**************************************|\n");
     gotoxy(38,6);
-    printf("| => Game Developers Information:      |");
+    printf("| => Game Developers Information:      |\n");
     gotoxy(38,7);
-    printf("| Name: Minhaz Ahmmed      ID: C231011 |");
+    printf("| Name: Minhaz Ahmmed                  |");
     gotoxy(38,8);
-    printf("| Name: Salah Uddin Mahi   ID: C231003 |");
+    printf("| B.Sc in CSE                          |\n                                      | from IIUC                            |\n                                      | ID: C231011                          |");
+    //printf("| Name: Salah Uddin Mahi   ID: C231003 |");
     gotoxy(38,9);
-    printf("| Name: Ayman Abrar        ID: C231001 |");
+    //printf("| Name: Ayman Abrar        ID: C231001 |");
     gotoxy(38,10);
-    printf("| Name: Md. Nazim Uddin    ID: C231020 |");
+    //printf("| Name: Md. Nazim Uddin    ID: C231020 |");
     gotoxy(38,11);
 
     printf("|**************************************|\n\n");
     printf("\n\n");
     gotoxy(42,14);
-    printf("Press any key to continue...\n");
+    printf("Press any key to continue...");
     getch();
 
     gotoxy(40,16);
