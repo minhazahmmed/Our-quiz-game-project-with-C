@@ -194,67 +194,78 @@ int main()
 
     printf("|**************************************|\n\n");
     printf("\n\n");
-    gotoxy(45,13);
+    gotoxy(42,14);
     printf("Press any key to continue...\n");
     getch();
 
-    gotoxy(44,15);
+    gotoxy(40,16);
     printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
-    gotoxy(44,16);
+    gotoxy(40,17);
     printf("|>> Press 1 to start the game |\n");
-    gotoxy(44,17);
+    gotoxy(40,18);
     printf("|>> Press 0 to quit the game  |\n");
-    gotoxy(44,18);
+    gotoxy(40,19);
     printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
-    gotoxy(50,20);
+    gotoxy(40,21);
     printf("Enter your choice : ");
     scanf("%d",&i);
     if(i==1)
     {
-
+        gotoxy(40,23);
         printf("The game has started...\n\n");
-        printf("====================================================================\n");
+        printf("========================================================================================================================\n");
     }
     else if(i==0)
     {
+        gotoxy(49,23);
         printf("The game has ended...\n\n");
     }
     else
     {
+        gotoxy(55,23);
         printf("Invalid!!!\n\n");
     }
 
 
     if(i==1)
     {
-
+        gotoxy(26,27);
         printf("01. Which operator is used for taking input from the user in C?\n\n");
+        gotoxy(26,29);
         printf("1) input\n");
+        gotoxy(26,30);
         printf("2) read\n");
+        gotoxy(26,31);
         printf("3) print\n");
+        gotoxy(26,32);
         printf("4) scanf\n");
+        gotoxy(26,33);
         printf("Enter Your Answer (Input only integer number) : ");
 
         scanf("%d",&ans1);
         printf("\n");
         if(ans1==4)
         {
+            gotoxy(33,35);
             printf("Correct Answer\n");
             point1=5;
-
+            gotoxy(33,36);
             printf("Congratulations! You have scored %d points.\n",point1);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
+            gotoxy(33,35);
             printf("Wrong Answer\n");
             point01=0 ;
+            gotoxy(33,36);
             printf("Oops! You have scored %d point.\n",point01);
+            gotoxy(33,37);
             printf("The correct answer is: 4) scanf\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         printf("\n");
-
+ gotoxy(26,39);
         printf("02. Which of the following is an example of a web browser?\n\n");
         printf("1) Adobe Photoshop\n");
         printf("2) Microsoft Excel\n");
@@ -269,7 +280,7 @@ int main()
             printf("Correct Answer\n");
             point2=5;
             printf("Congratulations! You have scored %d points.\n",point2);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -277,7 +288,7 @@ int main()
             point02=0;
             printf("Oops! You have scored %d point.\n",point02);
             printf("The correct answer is: 3) Google\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         printf("\n");
 
@@ -295,7 +306,7 @@ int main()
             printf("Correct Answer\n");
             point3=5;
             printf("Congratulations! You have scored %d points.\n",point3);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -303,7 +314,7 @@ int main()
             point03=0;
             printf("Oops! You have scored %d point.\n",point03);
             printf("The correct answer is: 2) //comment\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
 
         printf("\n");
@@ -322,7 +333,7 @@ int main()
             printf("Correct Answer\n");
             point4=5;
             printf("Congratulations! You have scored %d points.\n",point4);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -330,7 +341,7 @@ int main()
             point04=0;
             printf("Oops! You have scored %d point.\n",point04);
             printf("The correct answer is: 3) To prevent unauthorized access\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
 
         printf("\n");
@@ -351,7 +362,7 @@ int main()
             printf("Correct Answer\n");
             point5=5;
             printf("Congratulations! You have scored %d points.\n",point5);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -359,7 +370,7 @@ int main()
             point05=0;
             printf("Oops! You have scored %d point.\n",point05);
             printf("The correct answer is: 2) 11\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
 
         printf("\n");
@@ -378,7 +389,7 @@ int main()
             printf("Correct Answer\n");
             point6=5;
             printf("Congratulations! You have scored %d points.\n",point6);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -386,7 +397,7 @@ int main()
             point06=0;
             printf("Oops! You have scored %d point.\n",point06);
             printf("The correct answer is: 2) Uniform Resource Locator\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
 
         printf("\n");
@@ -406,7 +417,7 @@ int main()
             printf("Correct Answer\n");
             point7=5;
             printf("Congratulations! You have scored %d points.\n",point7);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -414,7 +425,7 @@ int main()
             point07=0;
             printf("Oops! You have scored %d point.\n",point07);
             printf("The correct answer is: 1) ;\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         printf("\n");
 
@@ -432,6 +443,7 @@ int main()
             printf("Correct Answer\n");
             point8=5;
             printf("Congratulations! You have scored %d points.\n",point8);
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -439,9 +451,9 @@ int main()
             point08=0;
             printf("Oops! You have scored %d point.\n",point08);
             printf("The correct answer is: 1) Central Processing Unit\n");
+            printf("========================================================================================================================\n");
 
         }
-        printf("====================================================================\n");
 
         printf("\n");
 
@@ -459,7 +471,7 @@ int main()
             printf("Correct Answer\n");
             point9=5;
             printf("Congratulations! You have scored %d points.\n",point9);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -467,7 +479,7 @@ int main()
             point09=0;
             printf("Oops! You have scored %d point.\n",point09);
             printf("The correct answer is: 2) 9\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         printf("\n");
         printf("10. What is the correct way to include the standered input/output library in C?\n\n");
@@ -484,7 +496,7 @@ int main()
             printf("Correct Answer\n");
             point10=5;
             printf("Congratulations! You have scored %d points.\n",point10);
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
         else
         {
@@ -492,7 +504,7 @@ int main()
             point010=0;
             printf("Oops! You have scored %d point.\n",point010);
             printf("The correct answer is: 1) #include<stdio.h>\n");
-            printf("====================================================================\n");
+            printf("========================================================================================================================\n");
         }
 
 
