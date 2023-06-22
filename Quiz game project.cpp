@@ -560,8 +560,10 @@ printf("\n");
 
         total=point1+point2+point3+point4+point5+point6+point7+point8+point9+point10;
         printf("\n\n\n");
-        
-        printf("                                            Your Total Score is = %d\n\n",total);
+        printf("                                           |-------------------------|\n");
+        printf("                                           |Your Total Score is = %d\ |\n",total);
+        printf("                                           |-------------------------|\n");
+
         if(total<=10)
         {
             printf("\n");
