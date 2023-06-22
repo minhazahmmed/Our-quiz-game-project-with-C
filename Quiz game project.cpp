@@ -69,10 +69,20 @@ void login()
     log = fopen("login12.txt", "r");
     struct login l;
     int found = 0;
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+    gotoxy(48,8);
+    printf("Login Information\n");
+    gotoxy(47,9);
+    printf("-------------------\n");
+    gotoxy(48,11);
     printf("User ID: ");
     scanf("%s", username);
+    gotoxy(48,12);
     printf("Password: ");
     scanf("%s", password);
+
     while (fread(&l, sizeof(struct login), 1, log))
     {
         if (strcmp(username, l.username) == 0 && strcmp(password, l.password) == 0)
@@ -80,20 +90,43 @@ void login()
             found = 1;
             break;
         }
+        system("CLS");
     }
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
 
     fclose(log);
     if (found==1)
     {
-        printf("\nLogin Successful\n\n");
-        printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+
+        gotoxy(47,10);
+        printf("Login Successful\n\n");
+        gotoxy(45,12);
+        printf("Please wait...Loading...\n");
+        for(int i=35; i<=80; i++)
+        {
+            Sleep(80);
+            gotoxy(i,14);
+            printf("%c",219);
+            fflush(stdout);
+        }
+
+        system("CLS");
+        //usleep(10000);
+         printf("|----------------------------------------------------------------------------------------------------------------------|\n");
         printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
         printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+
 
     }
     else
     {
-        printf("Incorrect UserID or Password\nPlease enter correct UserID or password\n\n");
+
+        gotoxy(47,10);
+        printf("Incorrect UserID or Password\n");
+        gotoxy(42,11);
+        printf("Please enter correct UserID or password\n\n");
         exit(0);
     }
 }
