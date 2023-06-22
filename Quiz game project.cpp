@@ -1,8 +1,18 @@
 #include<stdio.h>
+#include<windows.h>
 #include<stdlib.h>
 #include <string.h>
 #include<conio.h>
 #include<unistd.h>
+void gotoxy(int x, int y)
+{
+    static HANDLE h = NULL;
+    if(!h)
+        h= GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD c= {x,y};
+    SetConsoleCursorPosition(h,c);
+}
+
 
 struct login
 {
@@ -18,24 +28,38 @@ void registe()
     FILE *log;
     log = fopen("login12.txt", "a");
     struct login l;
-
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
+    printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+    gotoxy(44,7);
+    printf("Registration Information\n");
+    gotoxy(42,8);
+    printf("---------------------------\n");
+    gotoxy(44,10);
     printf("Enter first name: ");
     scanf("%s", l.fname);
+    gotoxy(44,11);
     printf("Enter last name: ");
     scanf("%s", l.lname);
+    gotoxy(44,12);
     printf("Enter username: ");
     scanf("%s", l.username);
+    gotoxy(44,13);
     printf("Enter password: ");
     scanf("%s", l.password);
     fwrite(&l, sizeof(struct login), 1, log);
     fclose(log);
-    printf("\n\nYour user name is UserID\n");
+    gotoxy(42,16);
+    printf("Your user name is UserID\n");
+    gotoxy(38,17);
     printf("Now login with UserID and Password\n");
-    printf("\nPress any key to continue......");
+    gotoxy(39,21);
+    printf("Press any key to continue...");
     getch();
     system("CLS");
     login();
 }
+
 
 void login()
 {
@@ -62,7 +86,10 @@ void login()
     if (found==1)
     {
         printf("\nLogin Successful\n\n");
-        printf("------Welcome to the Quiz Game------\n\n");
+        printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+        printf("|.........................................|| Welcome to the Quiz Game ||...............................................|\n");
+        printf("|----------------------------------------------------------------------------------------------------------------------|\n");
+
     }
     else
     {
@@ -76,8 +103,16 @@ int main()
 {
 
     int choice;
-    printf("------Welcome to the Quiz Game------\n\n");
-    printf("Press '1' for register\nPress '2' for login\n");
+    printf("|----------------------------------------------------------------------------------------------------------------------|");
+    printf("|.........................................|| Welcome to the Quiz Game ||...............................................|");
+    printf("|----------------------------------------------------------------------------------------------------------------------|");
+
+    gotoxy(48,9);
+    printf("Press '1' for register\n");
+    gotoxy(48,10);
+    printf("Press '2' for login\n");
+    gotoxy(48,12);
+    printf("Enter your choice ");
     scanf("%d", &choice);
     if (choice == 1)
     {
@@ -96,7 +131,7 @@ int main()
     int point1=0,point2=0,point3=0,point4=0,point5=0,point6=0,point7=0,point8=0,point9=0,point10=0;
     int point01,point02,point03,point04,point05,point06,point07,point08,point09,point010;
 
- system("Color 3E");
+    system("Color 3E");
 
     printf("**************************************|\n");
     printf("=> Game Developers Information:       |\n Name: Minhaz Ahmmed      ID: C231011 |\n Name: Salah Uddin Mahi   ID: C231003 |\n Name: Ayman Abrar        ID: C231001 |\n Name: Md. Nazim Uddin    ID: C231020 |\n");
