@@ -182,16 +182,15 @@ int main()
 
     system("Color 3E");
     gotoxy(38,5);
-    printf("|**************************************|\n");
+    printf("|--------------------------------------|\n");
     gotoxy(38,6);
     printf("| => Game Developer's Information:     |\n");
     gotoxy(38,7);
     printf("|    Name: Minhaz Ahmmed               |");
     gotoxy(38,8);
-    printf("|    B.Sc in CSE                       |\n                                      |    from IIUC                         |\n                                      |    ID: C231011                       |\n                                      |--------------------------------------|            \n                                      |--------------------------------------|\n                                      | => Co-Developers:                    |\n                                      |    Salah Uddin Mahi, Ayman Abrar,    |\n                                      |          Md. Nazim Uddin             |\n");
-    printf("                                      |--------------------------------------|\n\n\n");
-    printf("\n\n\n\n");
-    gotoxy(42,18);
+    printf("|    B.Sc in CSE                       |\n                                      |    from IIUC                         |\n                                      |    ID: C231011                       |\n                                      |--------------------------------------|                                                                                                     \n");
+
+    gotoxy(42,15);
     printf("Press any key to continue...");
     getch();
 
